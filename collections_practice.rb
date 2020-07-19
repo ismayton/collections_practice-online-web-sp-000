@@ -15,14 +15,7 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-  new_array = []
-  array.each_with_index.collect do |name, index|
-    if index != 1 
-      new_array << name
-    end
-  end
-  new_array << array[1]
-  new_array
+  swap_elements_from_to(array, 1, 2)
 end
 
 def swap_elements_from_to(array, from, to)
